@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Quiz | Quiz-App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/take-quiz.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">QuizApp</a>
+            <ul>
+                <li><a href="/student/dashboard.html">Dashboard</a></li>
+                <li><span id="welcomeMessage">Velkommen, Elev</span></li>
+                <li><a href="#" id="logoutBtn">Logg ut</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="quiz-container">
+            <h1 id="quizTitle">Laster quiz...</h1>
+            
+            <div id="quizProgress" class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p><span id="currentQuestion">0</span> av <span id="totalQuestions">0</span> spørsmål</p>
+            </div>
+            
+            <div id="quizContent" class="quiz-content">
+                <div id="questionContainer" class="question-container">
+                    <h2 id="questionText">Laster spørsmål...</h2>
+                    <div id="answerOptions" class="answer-options">
+                        <!-- Svaralternativer vil bli fylt inn her -->
+                    </div>
+                </div>
+                
+                <div class="quiz-actions">
+                    <button id="nextButton" class="btn">Neste spørsmål</button>
+                    <button id="finishButton" class="btn" style="display: none;">Fullfør Quiz</button>
+                </div>
+            </div>
+            
+            <div id="quizResult" class="quiz-result" style="display: none;">
+                <h2>Quiz fullført!</h2>
+                <p>Din poengsum: <span id="scoreDisplay">0</span> av <span id="totalQuestionsResult">0</span></p>
+                <div class="result-percentage">
+                    <div class="percentage-bar">
+                        <div id="percentageFill" class="percentage-fill" style="width: 0%"></div>
+                    </div>
+                    <p><span id="percentageDisplay">0</span>%</p>
+                </div>
+                <button id="returnToDashboard" class="btn">Tilbake til dashboard</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Quiz-App</p>
+    </footer>
+    
+    <script src="/js/auth.js"></script>
+    <script src="/js/take-quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Dashboard CSS */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.dashboard-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2980b9;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.empty-state {
+  color: #999;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.quiz-list, .results-list {
+  min-height: 300px;
+}
+
+.quiz-item, .result-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  transition: transform 0.2s;
+}
+
+.quiz-item:hover, .result-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-item h3, .result-item h3 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.quiz-item .actions, .result-item .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.quiz-item .actions button, .result-item .actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.quiz-item .actions button.delete, .result-item .actions button.delete {
+  background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+      grid-template-columns: 1fr;
+  }
+  
+  .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .dashboard-header button {
+      margin-top: 1rem;
+      width: 100%;
+  }
+}

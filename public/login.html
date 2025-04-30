@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logg inn | Quiz-App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">QuizApp</a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="register.html">Registrer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="loginForm" class="auth-form">
+            <h2>Logg inn på Quiz-App</h2>
+            
+            <div class="form-group">
+                <label for="brukernavn">Brukernavn</label>
+                <input type="text" id="brukernavn" name="brukernavn" placeholder="Skriv inn ditt brukernavn" required>
+                <span class="error-message">Vennligst skriv inn et gyldig brukernavn</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="passord">Passord</label>
+                <input type="password" id="passord" name="passord" placeholder="Skriv inn ditt passord" required>
+                <span class="error-message">Vennligst skriv inn ditt passord</span>
+            </div>
+            
+            <button type="submit" class="btn">Logg inn</button>
+            
+            <p>Har du ikke en konto? <a href="register.html">Registrer deg</a></p>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Quiz-App</p>
+    </footer>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>

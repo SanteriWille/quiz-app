@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rediger Quiz | Quiz-App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/edit-quiz.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">QuizApp</a>
+            <ul>
+                <li><a href="/teacher/dashboard.html">Dashboard</a></li>
+                <li><span id="welcomeMessage">Velkommen, Lærer</span></li>
+                <li><a href="#" id="logoutBtn">Logg ut</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="edit-header">
+            <h1 id="quizTitle">Laster quiz...</h1>
+            <button id="backBtn" class="btn secondary">Tilbake til dashboard</button>
+        </div>
+        
+        <div class="edit-content">
+            <div class="question-list-section">
+                <h2>Spørsmål i quizen</h2>
+                <div id="questionList" class="question-list">
+                    <p class="empty-state">Ingen spørsmål lagt til ennå.</p>
+                </div>
+            </div>
+            
+            <div class="add-question-section">
+                <h2>Legg til nytt spørsmål</h2>
+                <form id="addQuestionForm" class="question-form">
+                    <div class="form-group">
+                        <label for="spørsmålstekst">Spørsmål</label>
+                        <textarea id="spørsmålstekst" name="spørsmålstekst" rows="3" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="riktig_svar">Riktig svar</label>
+                        <input type="text" id="riktig_svar" name="riktig_svar" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feil_svar_1">Feil svar 1</label>
+                        <input type="text" id="feil_svar_1" name="feil_svar_1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feil_svar_2">Feil svar 2</label>
+                        <input type="text" id="feil_svar_2" name="feil_svar_2" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feil_svar_3">Feil svar 3</label>
+                        <input type="text" id="feil_svar_3" name="feil_svar_3" required>
+                    </div>
+                    
+                    <button type="submit" class="btn">Legg til spørsmål</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Quiz-App</p>
+    </footer>
+    
+    <script src="/js/auth.js"></script>
+    <script src="/js/edit-quiz.js"></script>
+</body>
+</html>

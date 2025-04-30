@@ -1,0 +1,118 @@
+/* Redigeringsside CSS */
+.edit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.edit-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.question-list-section, 
+.add-question-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-list {
+  min-height: 300px;
+}
+
+.question-item {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.question-item h3 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.answer-list {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.answer-list li {
+  margin-bottom: 0.3rem;
+}
+
+.answer-list li.correct {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.question-item .actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.question-item .actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.question-form textarea,
+.question-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.question-form textarea:focus,
+.question-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.btn.secondary {
+  background-color: #95a5a6;
+}
+
+.btn.secondary:hover {
+  background-color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .edit-content {
+      grid-template-columns: 1fr;
+  }
+  
+  .edit-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .edit-header button {
+      margin-top: 1rem;
+      width: 100%;
+  }
+}

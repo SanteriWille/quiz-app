@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elev Dashboard | Quiz-App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="logo">QuizApp</a>
+            <ul>
+                <li><span id="welcomeMessage">Velkommen, Elev</span></li>
+                <li><a href="#" id="logoutBtn">Logg ut</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="dashboard-header">
+            <h1>Elev Dashboard</h1>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="dashboard-section">
+                <h2>Tilgjengelige Quizer</h2>
+                <div id="quizList" class="quiz-list">
+                    <p class="empty-state">Det er ingen tilgjengelige quizer for øyeblikket.</p>
+                </div>
+            </div>
+            
+            <div class="dashboard-section">
+                <h2>Mine Resultater</h2>
+                <div id="resultsList" class="results-list">
+                    <p class="empty-state">Du har ikke fullført noen quizer ennå.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Quiz-App</p>
+    </footer>
+    
+    <script src="/js/auth.js"></script>
+    <script src="/js/student.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrer | Quiz-App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">QuizApp</a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="login.html">Logg inn</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="registerForm" class="auth-form">
+            <h2>Opprett ny konto</h2>
+            
+            <div class="form-group">
+                <label for="brukernavn">Brukernavn</label>
+                <input type="text" id="brukernavn" name="brukernavn" placeholder="Velg et unikt brukernavn" required>
+                <span class="error-message">Brukernavnet må være minst 3 tegn</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="passord">Passord</label>
+                <input type="password" id="passord" name="passord" placeholder="Velg et sikkert passord" required>
+                <span class="error-message">Passordet må være minst 6 tegn</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="rolle">Velg din rolle</label>
+                <select id="rolle" name="rolle" required>
+                    <option value="" disabled selected>-- Velg rolle --</option>
+                    <option value="lærer">Lærer</option>
+                    <option value="elev">Elev</option>
+                </select>
+                <span class="error-message">Vennligst velg en rolle</span>
+            </div>
+            
+            <button type="submit" class="btn">Registrer</button>
+            
+            <p>Har du allerede en konto? <a href="login.html">Logg inn</a></p>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Quiz-App</p>
+    </footer>
+    
+    <script src="js/register.js"></script>
+</body>
+</html>
