@@ -114,8 +114,8 @@ Kontakt
 [santeriwille@gmail.com]
 
 Resultat
-![image_1] (/public/images/img1.png)
-![image_2] (/public/images/img2.png)
-![image_3] (/public/images/img3.png)
-![image_4] (/public/images/img4.png)
-![image_5] (/public/images/img5.png)
+![image_1](public/images/img1.png)
+![image_2](public/images/img2.png)
+![image_3](public/images/img3.png)
+![image_4](public/images/img4.png)
+![image_5](public/images/img5.png)
